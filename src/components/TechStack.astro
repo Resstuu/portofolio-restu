@@ -1,0 +1,114 @@
+---
+import {
+    Code,
+    Database,
+    Globe,
+    Layers,
+    Server,
+    Smartphone,
+    Terminal,
+} from "lucide-react";
+---
+
+<section
+    class="py-12 border-t border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark overflow-hidden"
+>
+    <div class="max-w-7xl mx-auto px-4 text-center mb-8">
+        <span
+            class="text-xs font-semibold tracking-widest text-slate-500 uppercase"
+            >Technologies I work with</span
+        >
+    </div>
+    <div class="relative flex overflow-x-hidden group">
+        <div
+            class="animate-marquee whitespace-nowrap flex items-center gap-12 group-hover:paused"
+        >
+            <!-- Item 1 -->
+            <span
+                class="text-2xl font-bold text-slate-300 dark:text-slate-600 flex items-center gap-2"
+            >
+                <Code className="w-8 h-8" /> React
+            </span>
+            <!-- Item 2 -->
+            <span
+                class="text-2xl font-bold text-slate-300 dark:text-slate-600 flex items-center gap-2"
+            >
+                <Terminal className="w-8 h-8" /> TypeScript
+            </span>
+            <!-- Item 3 -->
+            <span
+                class="text-2xl font-bold text-slate-300 dark:text-slate-600 flex items-center gap-2"
+            >
+                <Layers className="w-8 h-8" /> Tailwind CSS
+            </span>
+            <!-- Item 4 -->
+            <span
+                class="text-2xl font-bold text-slate-300 dark:text-slate-600 flex items-center gap-2"
+            >
+                <Server className="w-8 h-8" /> Node.js
+            </span>
+            <!-- Item 5 -->
+            <span
+                class="text-2xl font-bold text-slate-300 dark:text-slate-600 flex items-center gap-2"
+            >
+                <Globe className="w-8 h-8" /> Next.js
+            </span>
+            <!-- Item 6 -->
+            <span
+                class="text-2xl font-bold text-slate-300 dark:text-slate-600 flex items-center gap-2"
+            >
+                <Database className="w-8 h-8" /> PostgreSQL
+            </span>
+            <!-- Item 7 -->
+            <span
+                class="text-2xl font-bold text-slate-300 dark:text-slate-600 flex items-center gap-2"
+            >
+                <Smartphone className="w-8 h-8" /> Flutter
+            </span>
+
+            <!-- Duplicates for marquee effect -->
+            <span
+                class="text-2xl font-bold text-slate-300 dark:text-slate-600 flex items-center gap-2"
+            >
+                <Code className="w-8 h-8" /> React
+            </span>
+            <span
+                class="text-2xl font-bold text-slate-300 dark:text-slate-600 flex items-center gap-2"
+            >
+                <Terminal className="w-8 h-8" /> TypeScript
+            </span>
+            <span
+                class="text-2xl font-bold text-slate-300 dark:text-slate-600 flex items-center gap-2"
+            >
+                <Layers className="w-8 h-8" /> Tailwind CSS
+            </span>
+            <span
+                class="text-2xl font-bold text-slate-300 dark:text-slate-600 flex items-center gap-2"
+            >
+                <Server className="w-8 h-8" /> Node.js
+            </span>
+            <span
+                class="text-2xl font-bold text-slate-300 dark:text-slate-600 flex items-center gap-2"
+            >
+                <Globe className="w-8 h-8" /> Next.js
+            </span>
+        </div>
+    </div>
+</section>
+
+<style>
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+    .animate-marquee {
+        animation: marquee 30s linear infinite;
+    }
+    .group-hover\:paused:hover {
+        animation-play-state: paused;
+    }
+</style>

@@ -1,0 +1,80 @@
+---
+import { Button } from "./ui/button";
+import { ArrowRight, Terminal } from "lucide-react";
+---
+
+<section
+    id="home"
+    class="relative pt-20 pb-24 lg:pt-32 lg:pb-36 overflow-hidden"
+>
+    <!-- Background Decoration -->
+    <div
+        class="absolute top-0 right-0 -mr-20 -mt-20 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] pointer-events-none"
+    >
+    </div>
+    <div
+        class="absolute bottom-0 left-0 -ml-20 -mb-20 w-[400px] h-[400px] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none"
+    >
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <h1
+                    class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight mb-6"
+                >
+                    Halo, saya <span class="text-primary">Restu</span>.<br />
+                    Menciptakan <span class="text-primary">pengalaman</span> digital
+                    yang intuitif dan mudah digunakan.
+                </h1>
+
+                <p
+                    class="text-lg md:text-xl text-slate-600 dark:text-text-muted max-w-2xl mb-8 leading-relaxed mx-auto md:mx-0"
+                >
+                    saya seorang UI/UX Designer yang merancang pengalaman
+                    digital berpusat pada pengguna melalui pendekatan strategis,
+                    desain yang fungsional, dan visual yang modern.
+                </p>
+
+                <div
+                    class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start"
+                >
+                    <a href="#work" class="w-full sm:w-auto">
+                        <Button
+                            size="lg"
+                            className="w-full sm:w-auto gap-2 group"
+                        >
+                            View Projects
+                            <ArrowRight
+                                className="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                            />
+                        </Button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Decorative Element / Profile Placeholder -->
+            <div class="w-full md:w-[400px] flex-shrink-0 flex justify-center">
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-1 bg-gradient-to-r from-primary to-indigo-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"
+                    >
+                    </div>
+                    <div
+                        class="relative w-[300px] h-[300px] md:w-[380px] md:h-[380px] rounded-2xl bg-white dark:bg-surface-dark overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700/50 shadow-2xl"
+                    >
+                        <div
+                            class="w-full h-full bg-cover bg-center"
+                            style="background-image: url('/profile.png');"
+                        >
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent"
+                            >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

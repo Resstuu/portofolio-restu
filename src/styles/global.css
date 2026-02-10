@@ -1,1 +1,45 @@
 @import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-primary: #38BDF8;
+    /* Sky Blue */
+    --color-primary-hover: #0EA5E9;
+    --color-background-light: #f5f7f8;
+    --color-background-dark: #0F172A;
+    /* Deep Blue/Black */
+    --color-surface-dark: #1E293B;
+    /* Slightly lighter for cards */
+    --color-text-main: #F8FAFC;
+    /* Off-White */
+    --color-text-muted: #94A3B8;
+    /* Slate Gray */
+
+    --font-display: "Inter", sans-serif;
+    --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+    body {
+        @apply font-body antialiased transition-colors duration-300;
+    }
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
