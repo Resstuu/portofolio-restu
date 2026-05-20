@@ -15,15 +15,14 @@ const projects = [
         link: "https://www.figma.com/design/preHab7DFCVrbmb9m7WzSE/MANAGE-GUDANG-UIX?node-id=218-3&t=X0QVmScURu3vbKq6-1"
     },
     {
-        title: "Food Store Website",
-        description: "Responsive food store website showcasing products with a clean design and seamless browsing experience.",
-        image: "/food_project.png",
+        title: "Retro Cam",
+        description: "A vintage-inspired camera application design blending nostalgic aesthetics with modern usability.",
+        image: "/retro_cam.png",
         tags: [
             { name: "Figma", color: "text-pink-500 bg-pink-500/10 border-pink-500/20" },
-            { name: "Tailwind", color: "text-blue-500 bg-blue-500/10 border-blue-500/20" },
             { name: "UI/UX", color: "text-orange-500 bg-orange-500/10 border-orange-500/20" },
         ],
-        link: "https://www.figma.com/design/P5b2E2GItpEGlMtbWUND8K/Untitled?node-id=0-1&t=gplfpykL4b9MdHAh-1"
+        link: "https://www.figma.com/design/edXb9xpfhTBRSsPpPTVXlw/RetroCam?node-id=0-1&t=YsGokK4AMTQNQDlc-1"
     },
     {
         title: "Class of Law",
